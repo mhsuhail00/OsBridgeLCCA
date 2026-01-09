@@ -59,7 +59,14 @@ python scripts/verify_installation.py
 
 ### 🖥️ **Running the Desktop Application**
 ```sh
-python src/osbridgelcca/desktop/app.py
+cd OsBridgeLCCA/src
+python -m osbridgelcca.desktop_app
+```
+
+### 🖥️ **Re-compiling QRC**
+```sh
+cd OsBridgeLCCA/src
+pyside6-rcc osbridgelcca/desktop_app/resources/resources.qrc -o osbridgelcca/desktop_app/resources/resources_rc.py
 ```
 
 ### 🌐 **Running the Web Application**
